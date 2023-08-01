@@ -33,8 +33,8 @@ const Form = ({toogle,inputDate,setInputDate,setToogle,editId, setInputValue,inp
 
   return (
     <>
-      <div className="flex w-full md:justify-start justify-center items-end">
-        <div className="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+      <div className="flex xl:flex-row flex-col w-full md:justify-start items-center justify-center xl:items-end">
+        <div className="relative mr-4 xl:mb-0 mb-4 lg:w-full xl:w-1/2">
           <label
           htmlFor="hero-field"
             className="leading-7 text-sm text-gray-600"

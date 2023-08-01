@@ -14,7 +14,7 @@ export default function List({
 }) {
   return (
     <>
-      <ul className="mt-10 lg:w-full xl:w-1/2 w-2/4 flex flex-col">
+      <ul className="mt-10 lg:w-full xl:w-1/2 flex flex-col">
         {toDo.map((todo) => (
           <Todo
             setInputValue={setInputValue}

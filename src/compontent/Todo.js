@@ -58,18 +58,19 @@ export default function Todo({
             />
           </div>
           <label
+            title={text}
             onMouseEnter={() => setHover(text)}
             htmlFor="hs-list-group-item-checkbox-1"
-            className={`ml-3.5 block w-full text-sm text-gray-600 dark:text-gray-500 ${
+            className={`ml-3.5 block truncate xl:w-9/12 w-48  text-sm text-gray-600 dark:text-gray-500 ${
               todo.completed ? "line-through" : days > 0 ? "line-through" : ""
             }`}
           >
-            {text} =={" "}
+            {text} ={" "}
             {days > 0
               ? "Expired"
               : days === 0
               ? "Today"
-              : Math.abs(days) + 1 + "Days Reamining"}
+              : Math.abs(days) + 1 + "Days to go"}
           </label>
           {/* Edit Div */}
           <div
